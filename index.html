@@ -1,163 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Mohammad Azijul Hakim | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Azijul Hakim</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #f1f5f9;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: #020617;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      color: #94a3b8;
-    }
-
-    .container {
+      font-family: Arial;
       max-width: 900px;
       margin: auto;
-      padding: 20px;
+      line-height: 1.6;
+      background-color: #f5f7fa;
     }
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+    h1 {
+      color: #0f4c5c;
+      margin-bottom: 5px;
     }
 
     h2 {
-      margin-top: 0;
-      color: #38bdf8;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    img {
+      width: 130px;
+      border-radius: 50%;
+    }
+
+    .card {
+      background: white;
+      padding: 18px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.2s;
     }
 
     a {
-      color: #38bdf8;
+      color: #0f4c5c;
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #38bdf8;
-      color: #000;
-      border-radius: 5px;
       font-weight: bold;
     }
 
-    .btn:hover {
-      background: #0ea5e9;
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #0f4c5c;
+      color: white;
+      border-radius: 6px;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #94a3b8;
+    .button:hover {
+      background: #1b6b7a;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
   </style>
+
 </head>
 
 <body>
 
-<header>
+<div class="header">
+  <img src="profile.jpg">
   <h1>Mohammad Azijul Hakim</h1>
-  <p>AI | Machine Learning | Software Development</p>
-</header>
+  <p><b>Machine Learning & Data Engineering Student</b></p>
 
-<div class="container">
-
-  <!-- ABOUT -->
-  <div class="card">
-    <h2>👨‍💻 About Me</h2>
-    <p>
-      I am a final-year MLDE student passionate about Artificial Intelligence, Machine Learning, 
-      and Software Development. I enjoy building real-world AI applications and deploying them to production.
-    </p>
-  </div>
-
-  <!-- PROJECT -->
-  <div class="card">
-    <h2>🤖 Multimodal AI Chatbot (Live)</h2>
-
-    <p>
-      A full-stack AI chatbot capable of intelligent conversations with multilingual support and contextual memory.
-      This project demonstrates real-world AI integration, backend development, and cloud deployment.
-    </p>
-
-    <ul>
-      <li>💬 Conversational AI powered by OpenAI</li>
-      <li>🌍 Multilingual support (English, Bengali, Finnish)</li>
-      <li>🧠 Context-aware responses with memory optimization</li>
-      <li>⚡ FastAPI backend deployed on Render</li>
-      <li>🔐 Secure API key handling using environment variables</li>
-    </ul>
-
-    <p>
-      🌍 <strong>Live Demo:</strong><br>
-      <a href="https://ai-chatbot-ney5.onrender.com/" target="_blank">
-        View Live App
-      </a>
-    </p>
-
-    <p>
-      📂 <strong>GitHub:</strong><br>
-      <a href="https://github.com/ahakim7/AI-Chatbot" target="_blank">
-        View Source Code
-      </a>
-    </p>
-  </div>
-
-  <!-- CV -->
-  <div class="card">
-    <h2>📄 Resume</h2>
-
-    <p>Download my latest CV:</p>
-
-    <a href="cv.pdf" download class="btn">⬇ Download CV</a>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="card">
-    <h2>📬 Contact</h2>
-
-    <p>
-      🔗 LinkedIn: 
-      <a href="#" target="_blank">Add your LinkedIn link</a>
-    </p>
-
-    <p>
-      💻 GitHub: 
-      <a href="https://github.com/ahakim7" target="_blank">
-        github.com/ahakim7
-      </a>
-    </p>
-  </div>
-
+  <p>
+    <a href="cv.pdf" class="button" target="_blank">📄 Download CV</a>
+  </p>
 </div>
 
-<footer>
-  © 2026 Mohammad Azijul Hakim
-</footer>
+<hr>
+
+<h2>About Me</h2>
+<div class="card">
+  Final-year Machine Learning and Data Engineering student focused on building practical AI solutions.
+  Strong in data preprocessing, feature engineering, and model development using real-world datasets.
+  Interested in industrial AI and production-level machine learning systems.
+</div>
+
+<h2>Projects</h2>
+
+<!-- PROJECT 1 -->
+<div class="card">
+  <h3>Hazard Analysis & Risk Prediction System ⭐</h3>
+  <p>
+    Developed a machine learning system using structured datasets, including data cleaning,
+    validation, feature preparation, and model training to identify and predict risk patterns.
+  </p>
+
+  <p><b>Result:</b> Built a working predictive model for hazard detection</p>
+
+  <p>
+    <a href="https://github.com/ahakim7/hazard-analysis" target="_blank">
+      View Project →
+    </a>
+  </p>
+</div>
+
+<!-- UPDATED CHATBOT -->
+<div class="card">
+  <h3>🤖 Multimodal AI Chatbot (Live) 🚀</h3>
+
+  <p>
+    Built and deployed a full-stack AI chatbot capable of real-time, multilingual conversations 
+    with contextual memory. This project focuses on production-ready AI system design, 
+    integrating backend APIs, language processing, and cloud deployment.
+  </p>
+
+  <ul>
+    <li>💬 OpenAI-powered conversational AI</li>
+    <li>🌍 Multilingual support (English, Bengali, Finnish)</li>
+    <li>🧠 Context-aware responses with optimized memory handling</li>
+    <li>⚡ FastAPI backend deployed on Render (live cloud app)</li>
+    <li>🔐 Secure API key management using environment variables</li>
+  </ul>
+
+  <p><b>Result:</b> Fully deployed AI chatbot with live user interaction</p>
+
+  <p>
+    🌍 <a href="https://ai-chatbot-ney5.onrender.com/" target="_blank">
+      Live Demo →
+    </a>
+  </p>
+
+  <p>
+    📂 <a href="https://github.com/ahakim7/AI-Chatbot" target="_blank">
+      View Code →
+    </a>
+  </p>
+</div>
+
+<!-- PROJECT 3 -->
+<div class="card">
+  <h3>Machine Learning Models</h3>
+  <p>
+    Built multiple machine learning models including artificial neural networks for classification
+    and prediction tasks using structured and text datasets.
+  </p>
+
+  <p>
+    <a href="https://github.com/ahakim7/Machine-Learning" target="_blank">
+      View Project →
+    </a>
+  </p>
+</div>
+
+<h2>Skills</h2>
+<div class="card">
+  <b>Programming:</b> Python, C++, Java <br><br>
+  <b>Machine Learning:</b> Pandas, NumPy, Scikit-learn, ANN <br><br>
+  <b>Concepts:</b> Data preprocessing, feature engineering, model training, ML lifecycle <br><br>
+  <b>Tools:</b> Git, REST APIs
+</div>
+
+<h2>What I Focus On</h2>
+<div class="card">
+  • Data cleaning, validation, and preprocessing<br>
+  • Feature engineering and model training<br>
+  • Building end-to-end machine learning solutions<br>
+  • Working with real-world datasets and practical problems
+</div>
+
+<h2>Contact</h2>
+<div class="card">
+  📧 Email: toufiqsiam7@gmail.com <br><br>
+  🔗 GitHub: <a href="https://github.com/ahakim7">github.com/ahakim7</a><br><br>
+  🔗 LinkedIn: <a href="https://linkedin.com/in/mohammad-azijul-hakim-813727193">LinkedIn Profile</a>
+</div>
 
 </body>
 </html>
