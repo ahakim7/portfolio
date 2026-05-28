@@ -1,197 +1,475 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Mohammad Azijul Hakim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mohammad Azijul Hakim | Portfolio</title>
 
   <style>
-  body {
-    font-family: Arial;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.6;
-    background-color: #0f172a;
-    color: #f1f5f9;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  h1 {
-    color: #38bdf8;
-    margin-bottom: 5px;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.7;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 20px;
+    }
 
-  h2 {
-    border-bottom: 2px solid #334155;
-    padding-bottom: 5px;
-    margin-top: 30px;
-  }
+    h1 {
+      color: #38bdf8;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-size: 40px;
+    }
 
-  .header {
-    text-align: center;
-    margin-top: 30px;
-  }
+    h2 {
+      border-bottom: 2px solid #334155;
+      padding-bottom: 8px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
 
-  img.profile {
-    width: 130px;
-    border-radius: 50%;
-    border: 3px solid #38bdf8;
-  }
+    h3 {
+      margin-bottom: 10px;
+      color: #f8fafc;
+    }
 
-  .card {
-    background: #1e293b;
-    padding: 18px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
-  }
+    p {
+      margin-bottom: 10px;
+    }
 
-  .card:hover {
-    transform: scale(1.02);
-    transition: 0.2s;
-  }
+    .header {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
 
-  .project-img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      box-shadow: 0px 0px 20px rgba(56, 189, 248, 0.4);
+    }
 
-  a {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: bold;
-  }
+    .card {
+      background: #1e293b;
+      padding: 22px;
+      margin: 18px 0;
+      border-radius: 12px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+      transition: 0.2s;
+    }
 
-  .button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 14px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 6px;
-  }
+    .card:hover {
+      transform: scale(1.01);
+    }
 
-  .button:hover {
-    background: #0ea5e9;
-  }
+    .project-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
 
-  ul {
-    padding-left: 20px;
-  }
-</style>
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
+    a:hover {
+      color: #0ea5e9;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background: #38bdf8;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #0ea5e9;
+      color: black;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #334155;
+      color: #e2e8f0;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin: 5px 5px 5px 0;
+      font-size: 14px;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    .section-space {
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="header">
-  <img src="profile.jpg" class="profile">
-  <h1>Mohammad Azijul Hakim</h1>
-  <p><b>Data Analytics & Machine Learning Student</b></p>
+  <!-- HEADER -->
+  <div class="header">
 
-  <p>
-    <a href="cv.pdf" class="button" target="_blank">📄 Download CV</a>
-  </p>
-</div>
+    <img src="profile.jpg" class="profile">
 
-<hr>
+    <h1>Mohammad Azijul Hakim</h1>
 
-<h2>About Me</h2>
-<div class="card">
-  Final-year Data Analytics and Machine Learning student with hands-on experience analyzing real-world datasets, identifying patterns, and building predictive models.  
-  Experienced in data preprocessing, numerical analysis, and extracting insights from structured data.  
-  Interested in applying data-driven methods to industrial problems and supporting decision-making through analysis and visualization.
-</div>
+    <p>
+      <b>Machine Learning & Data Engineering Student</b>
+    </p>
 
-<h2>Projects</h2>
+    <p>
+      Focused on AI systems, backend engineering, real-time data processing, and intelligent automation.
+    </p>
 
-<!-- MAIN PROJECT -->
-<div class="card">
-  <h3>🚗 Hazard Data Analysis & Prediction System ⭐</h3>
+    <p class="section-space">
+      <a href="cv.pdf" class="button" target="_blank">
+        📄 Download CV
+      </a>
 
-  <p>
-    Analyzed real-world vehicle sensor data collected over time to identify patterns, detect anomalies, and predict hazard events.
-  </p>
+      <a href="https://github.com/ahakim7" class="button" target="_blank">
+        💻 GitHub
+      </a>
 
-  <p><b>Data Source:</b> Real-world vehicle measurement data</p>
+      <a href="https://linkedin.com/in/mohammad-azijul-hakim-813727193" class="button" target="_blank">
+        🔗 LinkedIn
+      </a>
+    </p>
 
-  <!-- SCREENSHOTS -->
-  <img src="Overview.jpg" class="project-img">
-  <img src="Prediction.jpg" class="project-img">
-  <img src="Map Visualization.jpg" class="project-img">
+  </div>
 
-  <ul>
-    <li>Merged and processed multiple datasets to build a master dataset</li>
-    <li>Performed numerical analysis and exploratory data analysis (EDA)</li>
-    <li>Identified patterns and anomalies in vehicle and environmental data</li>
-    <li>Developed prediction models using Random Forest and XGBoost</li>
-    <li>Applied K-Means clustering for pattern discovery</li>
-    <li>Designed time-window based feature extraction</li>
-    <li>Built visualizations and dashboards for analysis</li>
-  </ul>
+  <!-- ABOUT -->
+  <h2>About Me</h2>
 
-  <p><b>Result:</b> Identified key patterns and built a working hazard prediction system</p>
+  <div class="card">
 
-  <p>
-    <a href="https://github.com/ahakim7/hazard-analysis" target="_blank">
-      View Project →
+    <p>
+      Final-year Machine Learning and Data Engineering student in Finland with hands-on experience building AI-powered applications, backend systems, and data-driven solutions.
+    </p>
+
+    <p>
+      Experienced in machine learning, real-time data processing, API development, and intelligent system design using Python and modern backend technologies.
+    </p>
+
+    <p>
+      Currently working on a Bachelor’s thesis focused on real-time semantic data transformation and LLM-based decision-making systems.
+    </p>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <h2>Featured Projects</h2>
+
+  <!-- HAZARD PROJECT -->
+  <div class="card">
+
+    <h3>🚗 Hazard Data Analysis & Prediction System ⭐</h3>
+
+    <p>
+      Analyzed real-world vehicle sensor data collected over time to identify patterns, detect anomalies, and predict hazard events.
+    </p>
+
+    <div class="tag">Python</div>
+    <div class="tag">XGBoost</div>
+    <div class="tag">Random Forest</div>
+    <div class="tag">Pandas</div>
+    <div class="tag">Machine Learning</div>
+    <div class="tag">Data Analysis</div>
+
+    <p class="status">Status: Completed</p>
+
+    <img src="Overview.jpg" class="project-img">
+    <img src="Prediction.jpg" class="project-img">
+    <img src="Map Visualization.jpg" class="project-img">
+
+    <ul>
+      <li>Merged and processed multiple datasets to build a master dataset</li>
+      <li>Performed exploratory data analysis (EDA)</li>
+      <li>Identified anomalies and environmental patterns</li>
+      <li>Built prediction models using Random Forest and XGBoost</li>
+      <li>Applied clustering techniques for pattern discovery</li>
+      <li>Developed dashboard visualizations for analysis</li>
+    </ul>
+
+    <p>
+      <b>Result:</b> Built a working hazard prediction system using real-world vehicle data.
+    </p>
+
+    <p>
+      <a href="https://github.com/ahakim7/hazard-analysis" target="_blank">
+        View Project →
+      </a>
+    </p>
+
+  </div>
+
+  <!-- CHATBOT -->
+  <div class="card">
+
+    <h3>🤖 Multimodal AI Chatbot</h3>
+
+    <p>
+      Developed a full-stack multilingual AI chatbot using LLM APIs with real-time conversational interaction.
+    </p>
+
+    <div class="tag">Python</div>
+    <div class="tag">FastAPI</div>
+    <div class="tag">LLM APIs</div>
+    <div class="tag">Frontend</div>
+    <div class="tag">Backend</div>
+
+    <p class="status">Status: Deployed</p>
+
+    <ul>
+      <li>Integrated LLM APIs for intelligent conversation</li>
+      <li>Developed backend services for request handling</li>
+      <li>Created multilingual conversational support</li>
+      <li>Built deployable full-stack application</li>
+    </ul>
+
+    <p>
+      <b>Result:</b> Successfully deployed working AI chatbot system.
+    </p>
+
+    <p>
+      🌍
+      <a href="https://ai-chatbot-ney5.onrender.com/" target="_blank">
+        Live Demo →
+      </a>
+    </p>
+
+    <p>
+      📂
+      <a href="https://github.com/ahakim7/AI-Chatbot" target="_blank">
+        View Code →
+      </a>
+    </p>
+
+  </div>
+
+  <!-- THESIS PROJECT -->
+  <div class="card">
+
+    <h3>
+      🧠 Bachelor Thesis – Real-Time Semantic Data Transformation & LLM Decision System (In Progress)
+    </h3>
+
+    <p>
+      Currently developing a scalable architecture for transforming real-time streaming data into semantic structures and enabling intelligent decision-making using Large Language Models (LLMs).
+    </p>
+
+    <div class="tag">Python</div>
+    <div class="tag">FastAPI</div>
+    <div class="tag">Pydantic</div>
+    <div class="tag">LLMs</div>
+    <div class="tag">Data Engineering</div>
+    <div class="tag">Backend Systems</div>
+
+    <p class="status">Status: In Progress</p>
+
+    <ul>
+      <li>Designing FastAPI backend architecture</li>
+      <li>Building semantic transformation pipelines</li>
+      <li>Implementing Pydantic validation models</li>
+      <li>Developing real-time data workflows</li>
+      <li>Integrating LLM-based intelligent processing</li>
+    </ul>
+
+    <p>
+      <b>Technologies:</b> Python, FastAPI, Pydantic, PostgreSQL, LLM APIs
+    </p>
+
+    <p>
+      <a href="https://github.com/ahakim7/Projects" target="_blank">
+        View Development Repository →
+      </a>
+    </p>
+
+  </div>
+
+  <!-- MACHINE LEARNING -->
+  <div class="card">
+
+    <h3>📊 Machine Learning & Data Analysis Projects</h3>
+
+    <p>
+      Collection of machine learning and data analysis projects involving classification, prediction, clustering, feature engineering, and structured data analysis.
+    </p>
+
+    <div class="tag">Scikit-learn</div>
+    <div class="tag">Pandas</div>
+    <div class="tag">NumPy</div>
+    <div class="tag">Data Visualization</div>
+    <div class="tag">Machine Learning</div>
+
+    <p class="status">Status: Ongoing</p>
+
+    <p>
+      <a href="https://github.com/ahakim7/Machine-Learning" target="_blank">
+        View Project →
+      </a>
+    </p>
+
+  </div>
+
+  <!-- SKILLS -->
+  <h2>Skills</h2>
+
+  <div class="card">
+
+    <p>
+      <b>Programming:</b><br>
+      Python, SQL, JavaScript, HTML, CSS
+    </p>
+
+    <br>
+
+    <p>
+      <b>Machine Learning & AI:</b><br>
+      Scikit-learn, XGBoost, Pandas, NumPy, Feature Engineering, Classification, Clustering, Anomaly Detection
+    </p>
+
+    <br>
+
+    <p>
+      <b>Backend Development:</b><br>
+      FastAPI, REST APIs, Pydantic, Backend Architecture, API Integration
+    </p>
+
+    <br>
+
+    <p>
+      <b>Data Engineering:</b><br>
+      Data Processing, ETL Concepts, Data Transformation, Structured Data Analysis
+    </p>
+
+    <br>
+
+    <p>
+      <b>Tools & Platforms:</b><br>
+      Git, GitHub, Streamlit, VS Code, Render
+    </p>
+
+  </div>
+
+  <!-- CURRENTLY LEARNING -->
+  <h2>Currently Learning</h2>
+
+  <div class="card">
+
+    • Data Engineering Pipelines<br><br>
+    • Distributed Systems<br><br>
+    • LLM Integration<br><br>
+    • Backend System Design<br><br>
+    • Real-Time Data Processing
+
+  </div>
+
+  <!-- GITHUB STATS -->
+  <h2>GitHub Activity</h2>
+
+  <div class="card">
+
+    <img
+      src="https://github-readme-stats.vercel.app/api?username=ahakim7&show_icons=true&theme=tokyonight"
+      width="100%"
+    >
+
+    <br><br>
+
+    <img
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahakim7&layout=compact&theme=tokyonight"
+      width="100%"
+    >
+
+  </div>
+
+  <!-- CONTACT -->
+  <h2>Contact</h2>
+
+  <div class="card">
+
+    📍 Finland <br><br>
+
+    💼 Open to internships and trainee opportunities <br><br>
+
+    📧 Email:
+    <a href="mailto:toufiqsiam7@gmail.com">
+      toufiqsiam7@gmail.com
     </a>
-  </p>
-</div>
 
-<!-- CHATBOT -->
-<div class="card">
-  <h3>🤖 Multimodal AI Chatbot</h3>
+    <br><br>
 
-  <p>
-    Developed a full-stack AI chatbot supporting multilingual conversations using LLM APIs and backend services.
-  </p>
-
-  <p><b>Result:</b> Deployed working chatbot system with real-time interaction</p>
-
-  <p>
-    🌍 <a href="https://ai-chatbot-ney5.onrender.com/" target="_blank">Live Demo →</a>
-  </p>
-
-  <p>
-    📂 <a href="https://github.com/ahakim7/AI-Chatbot" target="_blank">View Code →</a>
-  </p>
-</div>
-
-<!-- ML PROJECT -->
-<div class="card">
-  <h3>Machine Learning & Data Analysis</h3>
-  <p>
-    Built classification and prediction models using structured datasets, focusing on data preprocessing, feature engineering, and pattern recognition.
-  </p>
-
-  <p>
-    <a href="https://github.com/ahakim7/Machine-Learning" target="_blank">
-      View Project →
+    🔗 GitHub:
+    <a href="https://github.com/ahakim7" target="_blank">
+      github.com/ahakim7
     </a>
-  </p>
-</div>
 
-<h2>Skills</h2>
-<div class="card">
-  <b>Data Analysis:</b> Python (Pandas, NumPy), Data Cleaning, EDA, Data Visualization <br><br>
-  <b>Machine Learning:</b> Scikit-learn, XGBoost, Model Training, Feature Engineering, Anomaly Detection <br><br>
-  <b>Concepts:</b> Numerical Analysis, Pattern Recognition, Data Interpretation <br><br>
-  <b>Tools:</b> Git, SQL (basic), Streamlit
-</div>
+    <br><br>
 
-<h2>What I Focus On</h2>
-<div class="card">
-  • Analyzing real-world datasets and identifying patterns<br>
-  • Numerical data analysis and interpretation<br>
-  • Extracting insights to support decision-making<br>
-  • Designing data-driven dashboards and visualizations
-</div>
+    🔗 LinkedIn:
+    <a href="https://linkedin.com/in/mohammad-azijul-hakim-813727193" target="_blank">
+      LinkedIn Profile
+    </a>
 
-<h2>Contact</h2>
-<div class="card">
-  📧 Email: toufiqsiam7@gmail.com <br><br>
-  🔗 GitHub: <a href="https://github.com/ahakim7">github.com/ahakim7</a><br><br>
-  🔗 LinkedIn: <a href="https://linkedin.com/in/mohammad-azijul-hakim-813727193">LinkedIn Profile</a>
-</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Mohammad Azijul Hakim
+  </footer>
 
 </body>
+
 </html>
+```
