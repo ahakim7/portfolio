@@ -16,6 +16,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       max-width: 1000px;
@@ -36,7 +40,7 @@
     h2 {
       border-bottom: 2px solid #334155;
       padding-bottom: 8px;
-      margin-top: 40px;
+      margin-top: 60px;
       margin-bottom: 20px;
       color: #38bdf8;
     }
@@ -135,9 +139,19 @@
       color: #38bdf8;
     }
 
+    .nav {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .nav a {
+      margin: 0 12px;
+      font-size: 16px;
+    }
+
     footer {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 60px;
       margin-bottom: 20px;
       color: #94a3b8;
     }
@@ -150,6 +164,11 @@
 
       h1 {
         font-size: 32px;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 8px;
       }
 
     }
@@ -188,8 +207,21 @@
 
   </div>
 
+  <!-- NAVIGATION -->
+  <div class="card nav">
+
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#thesis">Thesis</a>
+    <a href="#skills">Skills</a>
+    <a href="#learning">Learning</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
   <!-- ABOUT -->
-  <h2>About Me</h2>
+  <h2 id="about">About Me</h2>
 
   <div class="card">
 
@@ -208,7 +240,7 @@
   </div>
 
   <!-- FEATURED PROJECTS -->
-  <h2>Featured Projects</h2>
+  <h2 id="projects">Featured Projects</h2>
 
   <!-- HAZARD PROJECT -->
   <div class="card">
@@ -297,7 +329,7 @@
 
   </div>
 
-  <!-- MACHINE LEARNING -->
+  <!-- ML PROJECTS -->
   <div class="card">
 
     <h3>📊 Machine Learning & Data Analysis Projects</h3>
@@ -322,8 +354,8 @@
 
   </div>
 
-  <!-- THESIS PROJECT -->
-  <h2>Thesis Project</h2>
+  <!-- THESIS -->
+  <h2 id="thesis">Thesis Project</h2>
 
   <div class="card">
 
@@ -366,7 +398,7 @@
   </div>
 
   <!-- SKILLS -->
-  <h2>Skills</h2>
+  <h2 id="skills">Skills</h2>
 
   <div class="card">
 
@@ -406,7 +438,7 @@
   </div>
 
   <!-- CURRENTLY LEARNING -->
-  <h2>Currently Learning</h2>
+  <h2 id="learning">Currently Learning</h2>
 
   <div class="card">
 
@@ -418,8 +450,8 @@
 
   </div>
 
-  <!-- GITHUB ACTIVITY -->
-  <h2>GitHub Activity</h2>
+  <!-- GITHUB -->
+  <h2 id="github">GitHub Activity</h2>
 
   <div class="card">
 
@@ -438,7 +470,7 @@
   </div>
 
   <!-- CONTACT -->
-  <h2>Contact</h2>
+  <h2 id="contact">Contact</h2>
 
   <div class="card">
 
